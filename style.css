@@ -8,15 +8,44 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
     font-size: 62.5%;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
+    height: 100vh;
+    display: block;
+    position: relative;
     /* photo taken by Emma Walden */
-    background-image: url(./assets/canyon.jpeg);
+    background: url(./assets/canyon.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+}
+
+h1 {
+    
+    font-weight: 900;
+    font-size: 9rem;
+    margin: 25px 50px 20px 50px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    color: #E35661;
+    
+}
+
+h2, 
+a {
+    color:#213E63;
+}
+
+h2 {
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+i {
+    font-size: 4rem;
 }
 
 .wrapper {
@@ -27,23 +56,41 @@ body {
 
 .primaryText {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding-bottom: 300px;
 }
 
-h1 {
-    color: #fff;
-    font-family: 'Abril Fatface', cursive;
-    font-weight: 900;
-    font-size: 9rem;
-    letter-spacing: 1.9px;
-    margin: 0 50px 150px 50px;
-    
+ul {
+    display: flex;
 }
 
-@media (max-width: 790px) {
+li {
+    padding: 20px;
+}
+
+@media (max-width: 975px) {
+    h1 {
+        font-size: 8rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    i {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 750px) {
     h1 {
         font-size: 5rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    i {
+        font-size: 2rem;
     }
 }
