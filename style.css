@@ -9,10 +9,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
     font-size: 62.5%;
     font-family: 'Source Sans Pro', sans-serif;
+    height: 100vh;
 }
 
 body {
-    height: 100vh;
     display: block;
     /* photo taken by Emma Walden */
     background: url(./assets/canyon.jpeg);
